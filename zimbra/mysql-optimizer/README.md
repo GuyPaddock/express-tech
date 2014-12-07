@@ -1,4 +1,4 @@
-# mysql-optimizer
+# mysql-optimizer for Zimbra servers
 `optimize_zimbra_db` will automatically defragment all of the tables in a
 Zimbra install using the `mysqlcheck` command.
 
@@ -54,6 +54,8 @@ Here's how:
    overwritten):
 
         @daily /usr/local/sbin/optimize_zimbra_db 2>&1 >> /opt/zimbra/log/zimbra_db_optimize.log
+
+4. Save the crontab file and exit the editor (CTRL+O, then CTRL+X).
 
 Now, every night at midnight, the Zimbra MySQL database will automatically be
 optimized and the results will be logged to
