@@ -17,7 +17,8 @@ Zimbra install using the `mysqlcheck` command.
   The optimization process will lock a table while it's being processed, which
   can cause the email system to be temporarily unavailable for users whose
   mailbox is included in the table that is being optimized. Additionally,
-  your server will require enough space for twice the size of each table.
+  your server will require enough space for twice the size of each table
+  during the operation.
 
 ## Installation
 Drop the `optimize_zimbra_db` script into a path in the system-wide path.
