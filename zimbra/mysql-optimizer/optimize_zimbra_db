@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Utility script for defragmenting Zimbra tables.
+#
+# WARNING: Do not run this on large production zimbra servers.
+#          This script is only intended for small-scale deployments.
+#
+# Based on /opt/zimbra/bin/mysql from ZCS 6.
+#
+# @author Guy Paddock (guy.paddock@redbottledesign.com)
+
+zimbra_root=$(getent passwd zimbra | cut -d: -f6)
+
+source $zimbra_root/bin/zmshutil || exit 1
+zmsetvars mysql_directory mysql_socket zimbra_mysql_user zimbra_mysql_password
+
+# Print a timestamp, for logging purposes.
+date
+exec ${mysql_directory}/bin/mysqlcheck -S ${mysql_socket} \
+    -u ${zimbra_mysql_user} --password=${zimbra_mysql_password} \
+    --auto-repair --optimize --all-databases
