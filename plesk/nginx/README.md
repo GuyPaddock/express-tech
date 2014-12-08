@@ -1,5 +1,4 @@
-# NGINX Configuration Snippets for Drupal 6 & 7 when running on
-# Plesk's PHP-FPM integration
+# NGINX Configuration Snippets for Drupal 6 & 7 when running on Plesk's PHP-FPM integration
 This package contains several configuration snippets that can be included in
 the NGINX configuration for a particular site when that site has been configured
 through Plesk's native NGINX and PHP-FPM support.
