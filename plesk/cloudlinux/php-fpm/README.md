@@ -245,7 +245,7 @@ Here are the steps to build your own RPMs from ART sources:
    
 13. Underneath the line you located in step #12, add a patch line that is one
     patch number higher with the appropriate flags. For example,
-    `%patch100 -p1 -b .lve-autoconf`. (The value passed to `-b` is optional and
+    `%patch101 -p1 -b .lve-autoconf`. (The value passed to `-b` is optional and
     arbitrary but is used internally by the patch process).
     
 14. Find the "Release:" line that applies to the release of the
