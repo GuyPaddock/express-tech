@@ -12,7 +12,8 @@ but it has not been tested with them.
 1. Create a new system-wide folder location for the snippets. We recommend
    `/usr/local/share/plesk/nginx/templates`.
    
-2. Copy all of the snippets in this folder to the folder you created in step #1.
+2. Copy all of the snippets in the folder containing this README to the folder you
+   created in step #1.
 
 3. Make sure that the folder and all of the snippet files are owned by root:root
    but readable by all users (i.e. folders should be 755 and files 644).
