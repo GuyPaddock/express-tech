@@ -102,7 +102,7 @@ Complete these steps for each site you want to enable PHP-FPM for:
     or rewrites in an `.htaccess` file via `mod_rewrite`, you will need to
     convert those rules into appropriate NGINX directives that you provide in
     the `Additional nginx directives` box. (Drupal-specific directives are
-    supplied in a separate package of this repo).
+    supplied in [a separate package](../../nginx) of this repo).
     
 18. Click "OK".
 
