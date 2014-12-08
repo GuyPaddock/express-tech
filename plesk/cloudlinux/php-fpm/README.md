@@ -133,7 +133,7 @@ Complete these steps for each site you want to enable PHP-FPM for:
 We've already rolled 64-bit RPMs with the CageFS patches for CloudLinux applied to
 [release 41 of PHP 5.4.35 from the Atomic Rocket Turtle (ART) repo](http://updates.atomicorp.com/channels/source/php/php-5.4.35-41.art.src.rpm).
 
-You can find them under the RPMS folder in the folder with this README.
+You can find our packages under the RPMS folder in the folder with this README.
 
 To install the replacement RPMs, follow these steps:
 
@@ -183,6 +183,7 @@ in the same folder as this README. You may want to reference it while you
 complete this section.
 
 Here are the steps to build your own RPMs from ART sources:
+
 1.  From a command-line logged-in as a user who has sudo access
     (**NOT `root`**), install the development packages needed to compile PHP:
    
