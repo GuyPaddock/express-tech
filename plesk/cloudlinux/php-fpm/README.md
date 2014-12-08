@@ -5,12 +5,12 @@ NGINX / PHP-FPM support in Plesk 12 to work properly with CageFS.
 ## What This Package Does
 After following the instructions in this file, you will find that CageFS is able
 to properly restrict what files PHP scripts run through PHP-FPM are able to see.
-You should see that CloudLinux hosting limits apply to PHP scripts run through
-PHP-FPM.
+You should also see that CloudLinux hosting limits apply to PHP scripts run
+through PHP-FPM.
 
-PHP selector does not work with this method, but since Plesk 12 provides very
-user-friendly configuration of PHP settings on a per-site basis, and those
-settings are compatible with NGINX, this should not be a serious loss.
+**NOTE:** PHP selector does not work with this method, but since Plesk 12
+provides very user-friendly configuration of PHP settings on a per-site basis,
+and those settings are compatible with NGINX, this should not be a serious loss.
 
 ## Background
 By default, Plesk 12 configures sites to be served up through Apache, and using
@@ -41,9 +41,9 @@ of the packages of PHP) with patches from CloudLinux to make PHP itself
 LVE-aware.
 
 ## Disclaimer
-- This script has been written and tested only with Plesk 12 and CloudLinux
-  Server release 6.6 (Leonid Kizim). It may work with other versions but it has
-  not been tested with them.
+This script has been written and tested only with Plesk 12 and CloudLinux Server
+release 6.6 (Leonid Kizim). It may work with other versions but it has
+not been tested with them.
 
 ## Installation of PHP-FPM for Plesk
 ### Install Plesk Components
@@ -147,7 +147,7 @@ To install the replacement RPMs, follow these steps:
    already have installed on your system with the corresponding patched
    packages:
 
-       rpm -qa | grep -e "^php" | grep 5.4 | \
+        rpm -qa | grep -e "^php" | grep 5.4 | \
          sed 's/-41.el5.art.x86_64/-541.cloudlinux.redbottle.x86_64.rpm/' | \
          xargs yum install
    
