@@ -131,8 +131,7 @@ Complete these steps for each site you want to enable PHP-FPM for:
 ## Installation of LVE-aware PHP
 ### Binary RPM Method
 We've already rolled 64-bit RPMs with the CageFS patches for CloudLinux applied to
-[PHP 5.4.35, release 41, from the
-Atomic Rocket Turtle (ART) repo)[http://updates.atomicorp.com/channels/source/php/php-5.4.35-41.art.src.rpm].
+[release 41 of PHP 5.4.35 from the Atomic Rocket Turtle (ART) repo](http://updates.atomicorp.com/channels/source/php/php-5.4.35-41.art.src.rpm).
 
 You can find them under the RPMS folder in the folder with this README.
 
