@@ -1,4 +1,4 @@
-# Plesk NGNIX/PHP-FPM Integration for CloudLinux CageFS Support Package
+# Plesk NGINX/PHP-FPM Integration for CloudLinux CageFS Support Package
 This package contains the instructions and RPM packages needed to get the native
 NGINX / PHP-FPM support in Plesk 12 to work properly with CageFS.
 
