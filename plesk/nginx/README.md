@@ -31,7 +31,7 @@ redirected to the SSL-version (i.e. on port 443), place this in the
     include "/usr/local/share/plesk/nginx/templates/ssl_redirect.conf";
 
 ### Drupal 6/7
-Plesk's default configuration of NGINX is not compatible with friendly URLs.
+Plesk's default configuration of NGINX is not compatible with Clean URLs.
 As a result, Drupal will get served up via Apache instead of NGINX, causing it
 not to perform as well.
 
