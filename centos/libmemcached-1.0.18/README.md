@@ -35,9 +35,9 @@ To install the replacement RPMs, follow these steps:
    already have installed on your system with the corresponding updated
    packages:
 
-       rpm -qa | grep -e "^libmemcached" | grep 1.0.16 | \
-         sed 's/-1.0.16-1.el6.art.x86_64/-1.0.18-1.el6.redbottle.x86_64.rpm/' | \
-         sudo xargs yum install
+        rpm -qa | grep -e "^libmemcached" | grep 1.0.16 | \
+          sed 's/-1.0.16-1.el6.art.x86_64/-1.0.18-1.el6.redbottle.x86_64.rpm/' | \
+          sudo xargs yum install
 
 4. Yum should report no errors and ask for your confirmation.
    - If the list of packages to be installed is empty, you don't have
